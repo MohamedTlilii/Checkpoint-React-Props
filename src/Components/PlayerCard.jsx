@@ -4,9 +4,10 @@ import Card from "react-bootstrap/Card";
 const PlayerCard = ({ name, team, nationality, jerseyNumber, age, image }) => {
   return (
     <Card style={{ width: "15rem", margin: "10px" }}>
+        {/* inline style for the img */}
       <Card.Img
-        style={{ width: "200px", height: "200px", objectfit: "cove" }}
-        // inline style for the img
+        
+       
         className="img"
         variant="top"
         src={image}
@@ -28,5 +29,5 @@ const PlayerCard = ({ name, team, nationality, jerseyNumber, age, image }) => {
 };
 
 export default PlayerCard;
-//create playercard component i can use for all palyers
+//create playercard component i can use for all palyersData
 //create arrow function that take object parameter that return the card with this parameter

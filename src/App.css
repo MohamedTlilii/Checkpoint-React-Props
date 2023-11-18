@@ -1,6 +1,10 @@
 .players-list-container {
     display: flex;
     justify-content: space-around; 
+    flex-wrap: wrap;
   
 }
-/* styiling our cards */
+/* styiling the cards */
+.Hero {
+    background-color:#552583 ;
+}

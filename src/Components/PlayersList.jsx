@@ -1,8 +1,8 @@
 import PlayerCard from "./PlayerCard";
 import PlayersData from "../PlayersData";
 import "../App.css";
-// import playercard to use for all the players i have
-// import playerdata to put in each card the info of each player
+// import playercard to use for all the playersData i have
+// import playerdata to put in each card the info of each player's
 // import appcss to style my cards
 
 const PlayersList = () => {
@@ -17,5 +17,5 @@ const PlayersList = () => {
 
 export default PlayersList;
 
-//create  arrow function that return the data from playerdata .map for array to get the index for each player
+//create  arrow function that return in <div > to show <div/> the data from playerdata .map for array (take2 paramaitr )to get the index for each player
 //in the playercard take the [{key and value} index] ...for each player
