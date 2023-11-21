@@ -1,32 +1,25 @@
-import Card from "react-bootstrap/Card";
-//btstrap card
+
 
 const PlayerCard = ({ name, team, nationality, jerseyNumber, age, image }) => {
   return (
-    <Card style={{ width: "15rem", margin: "10px" }}>
-        {/* inline style for the img */}
-      <Card.Img
-        
+    <div className="player-card">
+    <img  src={image} alt="" className="player-image" />
+    <div className="card-content">
+      <h3 className="player-name">{name}</h3>
+    
+      <img style={{ width: '50px' }} src={team} alt="" />
+      <p className="player-info"> #{jerseyNumber}</p>
        
-        className="img"
-        variant="top"
-        src={image}
-      />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>
-          Team: {team}
-          <br />
-          Nationality: {nationality}
-          <br />
-          Jersey Number: {jerseyNumber}
-          <br />
-          Age: {age}
-        </Card.Text>
-      </Card.Body>
-    </Card>
+      <img style={{ width: '50px' }} src={nationality} alt="" />
+      
+      
+      <p className="player-info"> {age} years</p>
+      
+    </div>
+  </div>
   );
 };
+
 
 export default PlayerCard;
 //create playercard component i can use for all palyersData
